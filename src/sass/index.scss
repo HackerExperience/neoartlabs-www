@@ -16,8 +16,13 @@ main {
 
   img {
     height: auto;
-    max-width: 600px;
     width: 600px;
+  }
+
+  @media (max-width: 700px) {
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -25,17 +30,23 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   width: 600px;
 
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+
   .link {
-    flex: 1;
+    align-self: center;
+    padding: 12px;
+    text-align: center;
 
     a {
-      color: #999;
+      color: lighten(#ED9121, 15%);
 
       &:hover {
-        color: #555;
+        color: #ED9121;
       }
     }
   }
