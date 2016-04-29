@@ -1,0 +1,30 @@
+mixin stylesheet(href, media)
+  if media
+    link(rel="stylesheet" type="text/css" media= media href= href)&attributes(attributes)
+  else
+    link(rel="stylesheet" type="text/css" media="all" href= href)&attributes(attributes)
+      
+html
+  head
+    title NeoArt Labs LLC
+    
+    meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+    meta(name="robots" content="index, follow")
+
+    +stylesheet("https://fonts.googleapis.com/css?family=Open+Sans:400")
+    +stylesheet("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
+    +stylesheet("/assets/css/index.css")
+  body
+    main
+      .logo
+        img(src="/assets/img/logo.svg")
+      .links
+        .link: a(href="#"): i.fa.fa-2x.fa-facebook-square
+        .link: a(href="#"): i.fa.fa-2x.fa-google-plus
+        .link: a(href="#"): i.fa.fa-2x.fa-twitter
+        .link: a(href="#"): i.fa.fa-2x.fa-linkedin
+        .link: a(href="#"): i.fa.fa-2x.fa-github
+        .link: a(href="#"): i.fa.fa-2x.fa-reddit
+        .link: a(href="#"): i.fa.fa-2x.fa-steam-square
+        .link: a(href="#"): i.fa.fa-2x.fa-twitch

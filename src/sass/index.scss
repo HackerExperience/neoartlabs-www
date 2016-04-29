@@ -1,0 +1,42 @@
+body {
+  background: #FFF;
+  color: #333;
+  display: flex;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+}
+
+main {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-bottom: 5%;
+  margin-top: 20%;
+
+  img {
+    height: auto;
+    max-width: 600px;
+    width: 600px;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 600px;
+
+  .link {
+    flex: 1;
+
+    a {
+      color: #999;
+
+      &:hover {
+        color: #555;
+      }
+    }
+  }
+}
