@@ -1,5 +1,5 @@
 {
-  "name": "lets-build-a-game",
+  "name": "neoart_homepage",
   "description": "",
   "version": "0.1.0",
   "private": true,
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://dev.hackerexperience.com/diffusion/LBAG/lets-build-a-game.git"
+    "url": "https://dev.hackerexperience.com/diffusion/NEOART/neoartlabshomepage.git"
   },
   "devDependencies": {
     "bower": "1.7.7",
