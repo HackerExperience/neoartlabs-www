@@ -43,10 +43,10 @@ main {
     text-align: center;
 
     a {
-      color: lighten(#ED9121, 15%);
+      color: #ED9121;
 
       &:hover {
-        color: #ED9121;
+        color: darken(#ED9121, 10%);
       }
     }
   }
